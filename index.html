@@ -23,12 +23,8 @@ var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " 
 
 	
 	 var ua = window.navigator.userAgent.toLowerCase();
-  if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-	              alert("1"); 
-	  
-  }else{
-	              alert("2"); 
-  window.navigate("http://www.taojinquan.com/index.php"); 
+  if(ua.match(/MicroMessenger/i) != 'micromessenger'){
+    window.location.href="http://www.cnblogs.com/daimajun/";	  
   }
 </script>
 <body>
