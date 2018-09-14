@@ -20,7 +20,7 @@
 </head>
 <body>
 <div class="footer">
-    <div id="copy">一键复制</div>
+    <div id="copy" style=''>一键复制</div>
     <a class="immediately" id="goTaobao">立即购买</a>
 </div>
 
@@ -103,7 +103,12 @@
     </div>
 </div>
 </body>
-
+<script>
+	 var ua = window.navigator.userAgent.toLowerCase();
+  if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+   document.getElementById("copy").style="width:100%;font-size:18px;height:60px;line-height:60px;";
+  }
+</script>
 <script src="http://wechat.qmtk.com/static/js/jquery-3.0.0.min.js"></script>
 <script src="http://wechat.qmtk.com/static/js/pull.js"></script>
 <script src="http://wechat.qmtk.com/static/js/clipboard.min.js"></script>
